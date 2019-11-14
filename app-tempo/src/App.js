@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Previsao from './componentes/previsao/Previsao'
+import Comentarios from './componentes/comentarios/Comentarios'
+import Contador from './componentes/contador/Contador'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+           
+        <Previsao/>
+        <Contador/>
+        <Comentarios
+         img={''}
+         nome="Mell"
+         subtitulo="Ameeeeei, faiz mais"
+         comentario="nossa, babado esse video. Melhor youtuber"
+        />
+      
+
     </div>
   );
 }
